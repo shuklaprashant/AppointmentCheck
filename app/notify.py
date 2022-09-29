@@ -9,21 +9,21 @@ account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
 client = Client(account_sid, auth_token)
 
-myNumber = '+447876342409'
+myNumber = ''
 
 def notify_call():
     call = client.calls.create(
                             twiml='<Response><Say>Hi Prashant, US Embassy at London, UK has opened the appointment for B2 VISA at London. \n'
                             'Please login immediately to book your appointment.</Say></Response>',
                             to=myNumber,
-                            from_='+447429925393'
+                            from_=''
                         )
 
 def notify_text():
     message = client.messages.create(
                               body='Hi Prashant, Appointments are still not available. You will be notified through a call \n'
                               'as soon as the appointments are open.',
-                              from_='+447429925393',
+                              from_='',
                               to=myNumber
                           )
 
