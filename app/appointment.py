@@ -17,7 +17,7 @@ if usernName:
 
 password = driver.find_element_by_id("user_password")
 if password:
-    password.send_keys("Jan@2022")
+    password.send_keys("")
 
 policy_checked = driver.find_element_by_xpath("//*[@id='new_user']/div[3]/label/div")
 if policy_checked:
