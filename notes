@@ -1,0 +1,27 @@
+Date of Appointment-
+//*[@id="appointments_consulate_appointment_date"]
+
+Calendar- 
+//*[@id="ui-datepicker-div"]
+
+First month- 
+//*[@id="ui-datepicker-div"]/div[1]
+
+Month title-
+//*[@id="ui-datepicker-div"]/div[1]/div/div/span[1]
+
+Table-
+//*[@id="ui-datepicker-div"]/div[1]/table
+
+T_Body-
+//*[@id="ui-datepicker-div"]/div[1]/table/tbody
+
+T_Row-
+//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[1]
+
+T-data-
+//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[1]/td[3]
+//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[1]/td[4]
+
+Next month- 
+//*[@id="ui-datepicker-div"]/div[2]/div/a
